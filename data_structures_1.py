@@ -51,3 +51,6 @@ print(participants_array.mean(axis=0))
 #      - the three separate RT lists (hint: you may need to use several for-loops)
 #      - the participants list of lists (hint: two for-loops should be enough here!)
 #      - the participants array in numpy (hint: use np.log instead of Python's log function)
+
+
+## practice push 
