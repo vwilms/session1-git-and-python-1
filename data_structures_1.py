@@ -21,7 +21,7 @@ participants = [
 ]
 
 # Getting a single value, e.g. RT of 4th trial from 2nd participant
-print(participants[1, 3])
+print(participants[1: 3]) #changed this , to : because I got an error
 
 # Comparing all of them is cleaner, but still slightly cumbersome
 for participant in participants:
@@ -52,5 +52,18 @@ print(participants_array.mean(axis=0))
 #      - the participants list of lists (hint: two for-loops should be enough here!)
 #      - the participants array in numpy (hint: use np.log instead of Python's log function)
 
+from math import log
 
-## practice push 
+#1
+[log(i) for i in participant_1_RTs] #I do not know if this is correct or how to find out
+[log(i) for i in participant_2_RTs] #I do not know if this is correct or how to find out
+[log(i) for i in participant_3_RTs] #I do not know if this is correct or how to find out
+
+#2
+for list in participants: 
+    for i in list:
+        print (log(i)) #I do not know if this is correct or how to find out
+
+#3
+log_array = np.log(participants_array)
+print(log_array) #I do not know if this is correct or how to find out
